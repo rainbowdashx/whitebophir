@@ -1,6 +1,7 @@
 const path = require("path");
 const app_root = path.dirname(__dirname); // Parent of the directory where this file is
-
+const dotenv = require('dotenv');
+dotenv.config();
 module.exports = {
     /** Port on which the application will listen */
     PORT: parseInt(process.env['PORT']) || 8080,
